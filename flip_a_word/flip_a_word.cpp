@@ -7,6 +7,7 @@ string str;
 stack<char> word;
 
 int main(){
+    
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
@@ -31,4 +32,5 @@ int main(){
         }
         cout << "\n";
     }
+
 }
