@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int bro[100000];
@@ -27,6 +28,13 @@ int main(){
     for(int i = 1; i < broNum; i++){
         d = gcd(d, bro[i]);
     }
+
+    // time bound O(n^2);
+    // for(int i = 0; i < broNum; i++){
+    //     for(int j = i; j < broNum; j++){
+    //         d = min(d, gcd(bro[i],bro[j]));
+    //     }
+    // }
 
     cout << d;
 
