@@ -32,7 +32,7 @@ int main(){
         // i += 2로 할 경우 4 = 2 + 2를 처리할 수 없다.
         for(int i = 1; i <= n/2; i += 1){
             if(!check[i] && !check[n-i]){
-                cnt++;
+                cnt++;  
             } 
         }
 
